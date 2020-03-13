@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shiva dApp</title>
+  </head>
+  <style>
+    input {
+      display: block;
+      margin-bottom: 12px;
+    }
+  </style>
+  <body>
+    <h1>shiva dApp</h1>
+
+  <hr>
+
+  <br>
+    <h1>Create a Star</h1>
+    <br><label for="starName">Star Name:</label><input type="text" id="starName"></input>
+    <br><label for="starId">Star ID:</label><input type="text" id="starId"></input>
+    <br><br><button id="createStar" onclick="App.createStar()">Create Star</button>
+    <br><br>
+    <br>
+    <h1>creator</h1>
+    <br><label for="s">Creator Name:</label><input type="text" id="s"></input>
+    <br><br><button id="s" onclick="App.creator()">s</button>
+    <br><br>
+    <h1>Look up a Star</h1>
+    <br><label for="tokenID">Star ID:</label><input type="text" id="tokenID"></input>
+    <div id='getStartName'></div>
+    <br><br><button onclick="App.lookUp()">Look Up a Star</button>
+    <hr>
+
+    <span id="status"></span>
+
+    <br>
+    
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+     <script src="js/app.js"></script>
+  </body>
+</html>
